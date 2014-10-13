@@ -7,6 +7,18 @@ Public Class Form1
 
         ' Please write your code here!
 
-        txtOutput.Text = "Not implemented yet!"
+        Dim result As String = ""
+
+        For i As Integer = st.Length - 1 To 0 Step -1
+            result = result & st.Chars(i)
+
+        Next
+
+        txtOutput.Text = result
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
